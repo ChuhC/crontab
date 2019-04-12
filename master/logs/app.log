@@ -1,0 +1,309 @@
+2019/04/12 16:03:01.466 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 16:03:37.188 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 16:11:28.758 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 16:11:53.799 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 16:12:43.353 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 16:14:41.804 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 16:14:43.998 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/
+2019/04/12 16:14:44.018 [D] [server.go:2619]  |            ::1|[47m 304 [0m|          1ms|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/04/12 16:14:44.037 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     18.001ms|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/04/12 16:14:44.038 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     3.0002ms|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/04/12 16:14:44.553 [D] [server.go:2619]  |            ::1|[42m 200 [0m|          1ms|   match|[44m GET     [0m /swagger/swagger.json
+2019/04/12 16:14:44.695 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 16:14:44.712 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     5.0003ms|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2019/04/12 16:14:54.502 [E] [asm_amd64.s:509]  save job error
+2019/04/12 16:14:54.502 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 16:15:34.845 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/
+2019/04/12 16:15:35.431 [D] [server.go:2619]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /swagger/swagger.json
+2019/04/12 16:15:35.577 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 16:15:38.757 [D] [server.go:2619]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /swagger/
+2019/04/12 16:15:39.094 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     4.0002ms|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 16:15:40.352 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 16:15:41.819 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/
+2019/04/12 16:15:42.034 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/swagger.json
+2019/04/12 16:15:42.155 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     4.0002ms|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 16:15:47.186 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 16:15:50.166 [D] [server.go:2619]  |            ::1|[42m 200 [0m|          1ms|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 16:16:03.575 [E] [asm_amd64.s:509]  save job error
+2019/04/12 16:16:03.575 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 16:18:42.012 [D] [server.go:2619]  |            ::1|[47m 304 [0m|          1ms|   match|[44m GET     [0m /swagger/
+2019/04/12 16:18:42.380 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/swagger.json
+2019/04/12 16:18:42.526 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 16:18:49.427 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 16:18:49.573 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 17:12:35.069 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 17:12:41.713 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 17:17:50.045 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 17:17:55.736 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 17:21:49.134 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 17:25:25.762 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 17:25:32.547 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 17:25:38.024 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 17:25:47.004 [D] [server.go:2619]  |            ::1|[47m 304 [0m|    44.0026ms|   match|[44m GET     [0m /swagger/
+2019/04/12 17:25:47.114 [D] [server.go:2619]  |            ::1|[47m 304 [0m|    93.0053ms|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/04/12 17:25:47.477 [D] [server.go:2619]  |            ::1|[47m 304 [0m|   453.0259ms|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/04/12 17:25:47.515 [D] [server.go:2619]  |            ::1|[47m 304 [0m|   491.0281ms|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/04/12 17:25:48.563 [D] [server.go:2619]  |            ::1|[42m 200 [0m|          1ms|   match|[44m GET     [0m /swagger/swagger.json
+2019/04/12 17:25:48.722 [D] [server.go:2619]  |            ::1|[42m 200 [0m|    13.0007ms|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 17:25:48.730 [D] [server.go:2619]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2019/04/12 17:38:59.936 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 17:40:42.406 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 17:40:48.308 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:01:51.727 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:01:58.505 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:02:04.481 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/
+2019/04/12 18:02:04.509 [D] [server.go:2619]  |            ::1|[47m 304 [0m|    16.0009ms|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/04/12 18:02:04.519 [D] [server.go:2619]  |            ::1|[47m 304 [0m|    22.0012ms|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/04/12 18:02:04.520 [D] [server.go:2619]  |            ::1|[47m 304 [0m|    12.0007ms|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/04/12 18:02:05.048 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger.json
+2019/04/12 18:02:05.194 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 18:02:05.204 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     2.0001ms|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2019/04/12 18:02:27.232 [C] [asm_amd64.s:509]  the request url is  /v1/job/save
+2019/04/12 18:02:27.232 [C] [asm_amd64.s:509]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/04/12 18:02:27.232 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:02:27.232 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:491
+2019/04/12 18:02:27.232 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:63
+2019/04/12 18:02:27.232 [C] [asm_amd64.s:509]  C:/Go/src/runtime/signal_windows.go:161
+2019/04/12 18:02:27.232 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/models/jobmgr.go:26
+2019/04/12 18:02:27.232 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/controllers/job.go:36
+2019/04/12 18:02:27.232 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:02:27.232 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:434
+2019/04/12 18:02:27.232 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:302
+2019/04/12 18:02:27.232 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/astaxie/beego/router.go:851
+2019/04/12 18:02:27.233 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:2619
+2019/04/12 18:02:27.233 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:1801
+2019/04/12 18:02:27.233 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:2337
+2019/04/12 18:02:27.233 [server.go:2846]  [HTTP] http: multiple response.WriteHeader calls
+2019/04/12 18:04:19.799 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/
+2019/04/12 18:04:20.167 [D] [server.go:2619]  |            ::1|[42m 200 [0m|          1ms|   match|[44m GET     [0m /swagger/swagger.json
+2019/04/12 18:04:20.336 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 18:04:21.971 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:04:27.904 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:12:03.540 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  the request url is  /v1/job/save
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:491
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:63
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  C:/Go/src/runtime/signal_windows.go:161
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/models/jobmgr.go:26
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/controllers/job.go:36
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:434
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:302
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/astaxie/beego/router.go:851
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:2619
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:1801
+2019/04/12 18:12:09.967 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:2337
+2019/04/12 18:12:09.968 [server.go:2846]  [HTTP] http: multiple response.WriteHeader calls
+2019/04/12 18:12:13.852 [C] [asm_amd64.s:509]  the request url is  /v1/job/save
+2019/04/12 18:12:13.852 [C] [asm_amd64.s:509]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/04/12 18:12:13.852 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:12:13.852 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:491
+2019/04/12 18:12:13.852 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:63
+2019/04/12 18:12:13.852 [C] [asm_amd64.s:509]  C:/Go/src/runtime/signal_windows.go:161
+2019/04/12 18:12:13.852 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/models/jobmgr.go:26
+2019/04/12 18:12:13.852 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/controllers/job.go:36
+2019/04/12 18:12:13.852 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:12:13.852 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:434
+2019/04/12 18:12:13.853 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:302
+2019/04/12 18:12:13.853 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/astaxie/beego/router.go:851
+2019/04/12 18:12:13.853 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:2619
+2019/04/12 18:12:13.853 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:1801
+2019/04/12 18:12:13.853 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:2337
+2019/04/12 18:12:13.853 [server.go:2846]  [HTTP] http: multiple response.WriteHeader calls
+2019/04/12 18:15:37.457 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:15:55.364 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/
+2019/04/12 18:15:55.722 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger.json
+2019/04/12 18:15:55.878 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     2.0001ms|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 18:16:02.194 [I] [job.go:36]  ############# {"Name":"111","CronExpr":"22","Command":"333"} /cron/jobs/111
+2019/04/12 18:16:02.194 [C] [asm_amd64.s:509]  the request url is  /v1/job/save
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:491
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:63
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  C:/Go/src/runtime/signal_windows.go:161
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/models/jobmgr.go:28
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/controllers/job.go:36
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:434
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:302
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/astaxie/beego/router.go:851
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:2619
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:1801
+2019/04/12 18:16:02.195 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:2337
+2019/04/12 18:16:02.195 [server.go:2846]  [HTTP] http: multiple response.WriteHeader calls
+2019/04/12 18:17:38.106 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:18:27.962 [D] [server.go:2619]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /swagger/
+2019/04/12 18:18:28.342 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /swagger/swagger.json
+2019/04/12 18:18:28.484 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     4.0002ms|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 18:18:32.846 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:18:39.483 [I] [job.go:36]  ############# {"Name":"111","CronExpr":"222","Command":"333"} /cron/jobs/111
+2019/04/12 18:18:39.483 [C] [asm_amd64.s:509]  the request url is  /v1/job/save
+2019/04/12 18:18:39.483 [C] [asm_amd64.s:509]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/04/12 18:18:39.483 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:18:39.483 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:491
+2019/04/12 18:18:39.483 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:63
+2019/04/12 18:18:39.483 [C] [asm_amd64.s:509]  C:/Go/src/runtime/signal_windows.go:161
+2019/04/12 18:18:39.483 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/models/jobmgr.go:29
+2019/04/12 18:18:39.483 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/controllers/job.go:36
+2019/04/12 18:18:39.484 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:18:39.484 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:434
+2019/04/12 18:18:39.484 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:302
+2019/04/12 18:18:39.484 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/astaxie/beego/router.go:851
+2019/04/12 18:18:39.484 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:2619
+2019/04/12 18:18:39.484 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:1801
+2019/04/12 18:18:39.484 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:2337
+2019/04/12 18:18:39.484 [server.go:2846]  [HTTP] http: multiple response.WriteHeader calls
+2019/04/12 18:18:43.513 [I] [job.go:36]  ############# {"Name":"111","CronExpr":"222","Command":"333"} /cron/jobs/111
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  the request url is  /v1/job/save
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:491
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:63
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  C:/Go/src/runtime/signal_windows.go:161
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/models/jobmgr.go:29
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/controllers/job.go:36
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:434
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:302
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/astaxie/beego/router.go:851
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:2619
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:1801
+2019/04/12 18:18:43.513 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:2337
+2019/04/12 18:18:43.514 [server.go:2846]  [HTTP] http: multiple response.WriteHeader calls
+2019/04/12 18:18:45.577 [I] [job.go:36]  ############# {"Name":"111","CronExpr":"222","Command":"333"} /cron/jobs/111
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  the request url is  /v1/job/save
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:491
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:63
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  C:/Go/src/runtime/signal_windows.go:161
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/models/jobmgr.go:29
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/controllers/job.go:36
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:434
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:302
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/astaxie/beego/router.go:851
+2019/04/12 18:18:45.577 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:2619
+2019/04/12 18:18:45.578 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:1801
+2019/04/12 18:18:45.578 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:2337
+2019/04/12 18:18:45.578 [server.go:2846]  [HTTP] http: multiple response.WriteHeader calls
+2019/04/12 18:19:27.809 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:19:52.458 [I] [job.go:36]  ############# {"Name":"111","CronExpr":"222","Command":"333"} /cron/jobs/111
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  the request url is  /v1/job/save
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:491
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:63
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  C:/Go/src/runtime/signal_windows.go:161
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/models/jobmgr.go:29
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/controllers/job.go:36
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:434
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:302
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/astaxie/beego/router.go:851
+2019/04/12 18:19:52.458 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:2619
+2019/04/12 18:19:52.459 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:1801
+2019/04/12 18:19:52.459 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:2337
+2019/04/12 18:19:52.459 [server.go:2846]  [HTTP] http: multiple response.WriteHeader calls
+2019/04/12 18:22:12.402 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:22:14.192 [I] [job.go:36]  ############# {"Name":"111","CronExpr":"222","Command":"333"} /cron/jobs/111
+2019/04/12 18:22:14.192 [C] [asm_amd64.s:509]  the request url is  /v1/job/save
+2019/04/12 18:22:14.192 [C] [asm_amd64.s:509]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/04/12 18:22:14.192 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:22:14.192 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:491
+2019/04/12 18:22:14.192 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:63
+2019/04/12 18:22:14.192 [C] [asm_amd64.s:509]  C:/Go/src/runtime/signal_windows.go:161
+2019/04/12 18:22:14.192 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/models/jobmgr.go:29
+2019/04/12 18:22:14.192 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/controllers/job.go:36
+2019/04/12 18:22:14.192 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:22:14.192 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:434
+2019/04/12 18:22:14.193 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:302
+2019/04/12 18:22:14.193 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/astaxie/beego/router.go:851
+2019/04/12 18:22:14.193 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:2619
+2019/04/12 18:22:14.193 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:1801
+2019/04/12 18:22:14.193 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:2337
+2019/04/12 18:22:14.194 [server.go:2846]  [HTTP] http: multiple response.WriteHeader calls
+2019/04/12 18:22:20.664 [I] [job.go:36]  ############# {"Name":"111","CronExpr":"222","Command":"333"} /cron/jobs/111
+2019/04/12 18:22:20.664 [C] [asm_amd64.s:509]  the request url is  /v1/job/save
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:491
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  C:/Go/src/runtime/panic.go:63
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  C:/Go/src/runtime/signal_windows.go:161
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/models/jobmgr.go:29
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/ChuhC/crontab/master/controllers/job.go:36
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:509
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:434
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  C:/Go/src/reflect/value.go:302
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  E:/Go_Work/src/github.com/astaxie/beego/router.go:851
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:2619
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  C:/Go/src/net/http/server.go:1801
+2019/04/12 18:22:20.665 [C] [asm_amd64.s:509]  C:/Go/src/runtime/asm_amd64.s:2337
+2019/04/12 18:22:20.665 [server.go:2846]  [HTTP] http: multiple response.WriteHeader calls
+2019/04/12 18:25:35.348 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:25:43.195 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:25:45.174 [I] [job.go:41]  ############# {"Name":"111","CronExpr":"222","Command":"333"} /cron/jobs/111
+2019/04/12 18:25:45.174 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:28:44.986 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:28:50.633 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:31:32.522 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:31:37.092 [I] [job.go:41]  ############# {"Name":"111","CronExpr":"222","Command":"333"} /cron/jobs/111
+2019/04/12 18:31:37.092 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:32:08.567 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:32:17.555 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/
+2019/04/12 18:32:17.569 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     2.0001ms|   match|[44m GET     [0m /swagger/swagger-ui.css
+2019/04/12 18:32:17.576 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     8.0005ms|   match|[44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/04/12 18:32:17.580 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     8.0005ms|   match|[44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/04/12 18:32:17.903 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/swagger.json
+2019/04/12 18:32:18.047 [D] [server.go:2619]  |            ::1|[42m 200 [0m|          1ms|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 18:32:18.054 [D] [server.go:2619]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /swagger/favicon-16x16.png
+2019/04/12 18:32:23.676 [I] [job.go:41]  ############# {"Name":"111","CronExpr":"222","Command":"33"} /cron/jobs/111
+2019/04/12 18:32:23.676 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:34:00.814 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:34:01.557 [I] [job.go:41]  ############# {"Name":"111","CronExpr":"222","Command":"33"} /cron/jobs/111
+2019/04/12 18:34:01.557 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:34:43.992 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:38:17.399 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:38:18.300 [I] [job.go:41]  ############# {"Name":"111","CronExpr":"222","Command":"33"} /cron/jobs/111
+2019/04/12 18:38:18.300 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:39:12.649 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:39:18.363 [I] [job.go:41]  ############# {"Name":"111","CronExpr":"222","Command":"33"} /cron/jobs/111
+2019/04/12 18:39:18.363 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:39:54.521 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:46:46.651 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:47:06.918 [D] [server.go:2619]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /swagger/
+2019/04/12 18:47:07.262 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/swagger.json
+2019/04/12 18:47:07.408 [D] [server.go:2619]  |            ::1|[42m 200 [0m|          1ms|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 18:47:44.973 [I] [job.go:41]  ############# {"Name":"111","CronExpr":"222","Command":"333"} /cron/jobs/111
+2019/04/12 18:47:44.974 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:48:28.600 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:48:29.231 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:49:01.233 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:49:35.828 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:49:53.479 [I] [job.go:41]  _______________________
+2019/04/12 18:49:53.479 [I] [job.go:41]  ############# {"Name":"111","CronExpr":"222","Command":"333"} /cron/jobs/111
+2019/04/12 18:49:53.479 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:50:38.222 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:50:40.410 [D] [server.go:2619]  |            ::1|[47m 304 [0m|     2.0001ms|   match|[44m GET     [0m /swagger/
+2019/04/12 18:50:40.763 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/swagger.json
+2019/04/12 18:50:40.910 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /swagger/favicon-32x32.png
+2019/04/12 18:50:48.172 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:51:59.535 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:52:05.004 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:57:04.621 [I] [job.go:41]  ############# {"Name":"1","CronExpr":"2","Command":"3"} /cron/jobs/1
+2019/04/12 18:57:04.621 [D] [server.go:2619]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:57:11.255 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:57:17.918 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:57:18.342 [I] [job.go:37]  ############# {"Name":"1","CronExpr":"2","Command":"3"} /cron/jobs/1
+2019/04/12 18:57:18.344 [I] [job.go:37]  &{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:21 raft_term:3  [key:"test" create_revision:21 mod_revision:21 version:1 value:"11111111" ] false 1}
+2019/04/12 18:57:18.346 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     5.0003ms|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 18:57:23.479 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 18:57:52.777 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 19:01:05.934 [I] [job.go:37]  ############# {"Name":"1","CronExpr":"2","Command":"3"} /cron/jobs/1
+2019/04/12 19:01:05.936 [I] [job.go:37]  &{cluster_id:14841639068965178418 member_id:10276657743932975437 revision:22 raft_term:3  [key:"test" create_revision:21 mod_revision:21 version:1 value:"11111111" ] false 1}
+2019/04/12 19:01:05.938 [D] [asm_amd64.s:509]  job already exist. oldJob: &{1 2 3}
+2019/04/12 19:01:05.938 [D] [server.go:2619]  |            ::1|[42m 200 [0m|     6.0004ms|   match|[46m POST    [0m /v1/job/save   r:/v1/job/save
+2019/04/12 19:01:08.044 [I] [asm_amd64.s:2337]  http server Running on http://:8080
+2019/04/12 19:01:11.842 [I] [job.go:33]  ############# {"Name":"1","CronExpr":"2","Command":"3"} /cron/jobs/1

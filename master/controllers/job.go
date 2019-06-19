@@ -3,18 +3,17 @@ package controllers
 import (
 	"fmt"
 
-	"github.com/ChuhC/crontab/common"
+	common "github.com/ChuhC/crontab/common"
 	"github.com/ChuhC/crontab/master/models"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
+	"golang.org/x/net/context"
 )
 
-
 // job controller
-type  JobController struct {
+type JobController struct {
 	beego.Controller
 }
-
 
 // @Title Save
 // @Description save job to etcd
@@ -22,22 +21,120 @@ type  JobController struct {
 // @Param	crontab  query 	    string	true        "crontab expression"
 // @Param	command  query	    string	true        "crontab command"
 // @Success 200 {string} job save success
-// @Failure 403 get no job
+// @Failure 403
 // @router /save [post]
-func (j *JobController) Save(){
+func (j *JobController) Save() {
+	var (
+		err    error
+		oldJob *common.Job
+	)
+	var job = &common.Job{}
+	err = j.ParseForm(job)
+	if err != nil {
+		logs.Error("parse form error! err: %s", err.Error())
+		return
+	}
 
-	job := common.Job{}
-	if err := j.ParseForm(&job); err != nil{
-		logs.Error("save job error")
+	if oldJob, err = models.G_JobMgr.SaveJob(context.Background(), job); err != nil {
+		logs.Error("save job error! err: %s", err.Error())
+		return
 	}
-	oldJob, err := models.G_JobMgr.SaveJob(job)
-	if err != nil{
-		logs.Error("save job error")
-	}
-	if oldJob != nil{
-		logs.Debug("job already exist. oldJob: %s", oldJob)
-	}
-	j.Ctx.WriteString(fmt.Sprintf("save job success! name: %s, cronExpr: %s, command: %s", job.Name,
-		job.CronExpr, job.Command) )
+
+	resp := common.BuildResponse(0, "success", oldJob)
+	logs.Debug("save job success. oldJob: %+v", oldJob)
+	j.Ctx.ResponseWriter.Write(resp)
 }
 
+// @Title Del
+// @Description del job from etcd
+// @Param	name     query 	    string	true        "crontab task name"
+// @Success 200 {string} delete job success
+// @Failure 403
+// @router /del [post]
+func (j *JobController) Del() {
+	var (
+		err    error
+		oldJob *common.Job
+		resp   []byte
+	)
+	jobName := j.GetString("name")
+
+	oldJob, err = models.G_JobMgr.DelJob(context.Background(), jobName)
+	if err != nil {
+		goto ERR
+	}
+
+	if oldJob == nil {
+		err = fmt.Errorf("job not exist")
+		goto ERR
+	}
+
+	logs.Debug("del job success! oldJob: %+v", oldJob)
+	resp = common.BuildResponse(0, "success", oldJob)
+	j.Ctx.ResponseWriter.Write(resp)
+	return
+
+ERR:
+	logs.Error("del job failed! err: %s", err.Error())
+	resp = common.BuildResponse(-1, err.Error(), oldJob)
+	j.Ctx.ResponseWriter.Write(resp)
+	return
+}
+
+// @Title GetAll
+// @Description get all jobs
+// @Success 200 {string} get all jobs success
+// @Failure 403
+// @router /getall [get]
+func (j *JobController) GetAll() {
+	var resp []byte
+	jobList, err := models.G_JobMgr.GetAll(context.Background())
+	if err != nil {
+		goto ERR
+	}
+	logs.Debug("get all job success! jobList: %+v", jobList)
+	resp = common.BuildResponse(0, "success", jobList)
+	j.Ctx.ResponseWriter.Write(resp)
+	return
+
+ERR:
+	logs.Debug("get all job failed! err: %s", err.Error())
+	resp = common.BuildResponse(-1, err.Error(), jobList)
+	j.Ctx.ResponseWriter.Write(resp)
+
+	return
+}
+
+// @Title killjob
+// @Description kill a job
+// @Param	name     query 	    string	true        "crontab task name"
+// @Success 200 {string} kill a job success
+// @Failure 403
+// @router /kill [post]
+func (j *JobController) Kill() {
+	var (
+		err  error
+		resp []byte
+	)
+	jobName := j.GetString("name")
+	err = models.G_JobMgr.KillJob(jobName)
+	if err != nil {
+
+	}
+	err = models.G_JobMgr.KillJob(jobName)
+	if err != nil {
+		goto ERR
+	}
+
+	logs.Error("kill job succeed! name: %s", jobName)
+	resp = common.BuildResponse(0, "success", nil)
+	j.Ctx.ResponseWriter.Write(resp)
+	return
+
+ERR:
+	logs.Error("kill job failed! err: %s", err.Error())
+	resp = common.BuildResponse(-1, err.Error(), nil)
+	j.Ctx.ResponseWriter.Write(resp)
+	return
+
+}

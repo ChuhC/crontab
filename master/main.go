@@ -10,7 +10,7 @@ import (
 )
 
 // init logger
-func  initLogger()  {
+func initLogger() {
 	config := make(map[string]interface{})
 	config["filename"] = beego.AppConfig.String("logPath")
 
@@ -26,15 +26,10 @@ func  initLogger()  {
 }
 
 func main() {
-	if beego.BConfig.RunMode == "dev" {
-		beego.BConfig.WebConfig.DirectoryIndex = true
-		beego.BConfig.WebConfig.StaticDir["/swagger"] = "swagger"
-	}
-
 	// init logger
 	initLogger()
+	beego.SetStaticPath("/", "./static/index.html")
 
-	//beego.ErrorHandler("403", )
-
+	// router
 	beego.Run()
 }

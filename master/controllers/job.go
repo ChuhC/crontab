@@ -3,7 +3,7 @@ package controllers
 import (
 	"fmt"
 
-	common "github.com/ChuhC/crontab/common"
+	"github.com/ChuhC/crontab/common"
 	"github.com/ChuhC/crontab/master/models"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
@@ -15,12 +15,11 @@ type JobController struct {
 	beego.Controller
 }
 
-// @Title Save
 // @Description save job to etcd
 // @Param	name     query 	    string	true        "crontab task name"
-// @Param	crontab  query 	    string	true        "crontab expression"
-// @Param	command  query	    string	true        "crontab command"
-// @Success 200 {string} job save success
+// @Param	command  query 	    string	true        "crontab command"
+// @Param	cronExpr query 	    string	true        "crontab expression"
+// @Success 200 {string} save job success
 // @Failure 403
 // @router /save [post]
 func (j *JobController) Save() {
@@ -42,10 +41,10 @@ func (j *JobController) Save() {
 
 	resp := common.BuildResponse(0, "success", oldJob)
 	logs.Debug("save job success. oldJob: %+v", oldJob)
+	fmt.Println(resp)
 	j.Ctx.ResponseWriter.Write(resp)
 }
 
-// @Title Del
 // @Description del job from etcd
 // @Param	name     query 	    string	true        "crontab task name"
 // @Success 200 {string} delete job success
@@ -85,7 +84,7 @@ ERR:
 // @Description get all jobs
 // @Success 200 {string} get all jobs success
 // @Failure 403
-// @router /getall [get]
+// @router /list [get]
 func (j *JobController) GetAll() {
 	var resp []byte
 	jobList, err := models.G_JobMgr.GetAll(context.Background())

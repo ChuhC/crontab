@@ -28,7 +28,6 @@ func initLogger() {
 func main() {
 	// init logger
 	initLogger()
-	beego.SetStaticPath("/", "./static/index.html")
 
 	// router
 	beego.Run()

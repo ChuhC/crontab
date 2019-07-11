@@ -1,47 +1,64 @@
-package scheduler
+package worker
 
 import (
 	"fmt"
+	"os/exec"
+	"strings"
 	"time"
 
 	"github.com/ChuhC/crontab/common"
-	"github.com/astaxie/beego/logs"
+	. "github.com/ChuhC/crontab/worker/logger"
 )
 
 type Scheduler struct {
 	JobEventChan    chan *common.JobEvent
 	jobPlanTable    map[string]*common.JobSchedulePlan
-	jobExecutingJob map[string]*JobExecuteInfo
+	jobExecutingJob map[string]*common.JobExecuteInfo
 }
 
-func NewScheduler() *Scheduler {
+var G_Scheduler *Scheduler
+
+func InitScheduler() {
 	sch := &Scheduler{
-		JobEventChan: make(chan *common.JobEvent, 1000),
+		JobEventChan: make(chan *common.JobEvent, 65535),
 		jobPlanTable: make(map[string]*common.JobSchedulePlan),
 	}
 
 	go sch.ScheduleLoop()
-	return sch
+
+	G_Scheduler = sch
+
 }
 
 func (s *Scheduler) TryStartJob(jobPlan *common.JobSchedulePlan) {
 
 }
 
+func (s *Scheduler) RunCommand(job *common.Job) error {
+	cmd := strings.Split(job.Command, " ")
+	exc := exec.Command(cmd[0], cmd[1:]...)
+	return exc.Run()
+}
+
 func (s *Scheduler) TrySchedule() time.Duration {
 
 	fmt.Println(" in try schedule", len(s.jobPlanTable))
-	//如果任务表为空，随便睡眠多久
+	//sleep random time
 	if len(s.jobPlanTable) == 0 {
 		return 1 * time.Second
 	}
 
-	//遍历所有任务
 	var nearTime *time.Time
+	// range all jobs
 	for _, jobPlan := range s.jobPlanTable {
+		fmt.Println(jobPlan.NextTime)
+		fmt.Println(jobPlan.Job.CronExpr)
 		if jobPlan.NextTime.Before(time.Now()) || jobPlan.NextTime.Equal(time.Now()) {
-			// TODO： 尝试执行任务
-			fmt.Println("执行任务", jobPlan.Job.Name)
+			LG.Debug("执行任务, %s", jobPlan.Job.Name)
+			err := s.RunCommand(jobPlan.Job)
+			if err != nil {
+				LG.Error("command: %s exec failed. err: %s", jobPlan.Job.Command, err.Error())
+			}
 			jobPlan.NextTime = jobPlan.Expr.Next(time.Now())
 		}
 
@@ -57,7 +74,6 @@ func (s *Scheduler) TrySchedule() time.Duration {
 
 func (s *Scheduler) ScheduleLoop() {
 
-	fmt.Println("in schedule loop")
 	scheduleAfter := s.TrySchedule()
 
 	timer := time.NewTimer(scheduleAfter)
@@ -66,11 +82,10 @@ func (s *Scheduler) ScheduleLoop() {
 		case event := <-s.JobEventChan:
 			switch event.EventType {
 			case common.JOB_EVENT_SAVE:
-				// TODO: do save
-				fmt.Println("recv event save. ", event.Job.Name)
+				LG.Debug("recv event save. name: %s", event.Job.Name)
 				jobPlan, err := common.NewJobSchedulePlan(event.Job)
 				if err != nil {
-					logs.Error(err.Error())
+					LG.Error("NewJobSchedulePlan err, ", err.Error())
 					break
 				}
 				fmt.Println(jobPlan.Job.Name)
@@ -80,8 +95,7 @@ func (s *Scheduler) ScheduleLoop() {
 
 			case common.JOB_EVENT_DELETE:
 
-				fmt.Println("recv event delete!")
-				// TODO: do delete
+				LG.Debug("recv event delete. name: %s", event.Job.Name)
 				_, existed := s.jobPlanTable[event.Job.Name]
 				if existed {
 					delete(s.jobPlanTable, event.Job.Name)
@@ -98,7 +112,6 @@ func (s *Scheduler) ScheduleLoop() {
 
 func (s *Scheduler) PushScheduler(event *common.JobEvent) {
 	s.JobEventChan <- event
-
 }
 
 func (s *Scheduler) handleScheduler(event *common.JobEvent) {

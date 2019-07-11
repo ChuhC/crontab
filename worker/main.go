@@ -1,61 +1,42 @@
 package main
 
 import (
-	"encoding/json"
 	"flag"
 	"fmt"
 	"os"
 	"os/signal"
 	"time"
 
-	"github.com/ChuhC/crontab/worker/mgr"
-	"github.com/Unknwon/goconfig"
-	"github.com/astaxie/beego/logs"
+	"github.com/BurntSushi/toml"
+	"github.com/ChuhC/crontab/worker/logger"
+	"github.com/ChuhC/crontab/worker/worker"
 )
-
-var (
-	confFile string // 配置文件路径
-)
-
-// 解析命令行参数
-func initArgs() {
-	flag.StringVar(&confFile, "config", "src/github.com/Chuhc/crontab/worker/conf/worker.conf", "指定配置文件")
-	flag.Parse()
-}
-
-// init logger
-func initLogger(fileName string) {
-	config := make(map[string]interface{})
-	config["filename"] = fileName
-
-	// map 转 json
-	configStr, err := json.Marshal(config)
-	if err != nil {
-		fmt.Println("initLogger failed, marshal err:", err)
-		return
-	}
-	logs.Debug(string(configStr))
-	logs.SetLogger(logs.AdapterFile, string(configStr))
-	logs.SetLogFuncCall(true)
-}
 
 func main() {
 
-	initArgs()
+	flagSet := flag.NewFlagSet("crontab worker", flag.ExitOnError)
+	flagSet.String("config", "", "path to config file")
 
-	cfg, err := goconfig.LoadConfigFile(confFile)
-	if err != nil {
-		panic("load configure file error")
+	flagSet.Parse(os.Args[1:])
+
+	// load configuration
+	cfg := worker.ConfigData{}
+	configFile := flagSet.Lookup("config").Value.String()
+	if configFile != "" {
+		_, err := toml.DecodeFile(configFile, &cfg)
+		if err != nil {
+			panic(fmt.Sprintf("error: failed to load config file %s - %s", configFile, err.Error()))
+		}
 	}
-	etcdHost, _ := cfg.GetValue("etcd", "host")
-	etcdPort, _ := cfg.Int("etcd", "port")
-	logPath, _ := cfg.GetValue("log", "path")
 
 	// init logger
-	initLogger(logPath)
+	logger.InitLogger(cfg.Log.FileName, cfg.Log.Daily, cfg.Log.MaxDays, cfg.Log.Console, cfg.Log.Level)
+
+	// init scheduler
+	worker.InitScheduler()
 
 	// init job mgr
-	mgr.InitJobMgr(etcdHost, etcdPort)
+	worker.InitJobMgr(cfg.Etcd.EndPoints, cfg.Etcd.DialTimeout)
 
 	// catch ctrl+c
 	c := make(chan os.Signal, 1)

@@ -2,12 +2,13 @@ package common
 
 import (
 	"encoding/json"
+	"strings"
 )
 
 type Job struct {
-	Name     string `form:"name"`
-	CronExpr string `form:"cronExpr"`
-	Command  string `form:"command"`
+	Name     string `json:"name" form:"name"`
+	CronExpr string `json:"cronExpr" form:"cronExpr"`
+	Command  string `json:"command" form:"command"`
 }
 
 // HTTP response
@@ -36,4 +37,8 @@ func UnpackJob(value []byte) (ret *Job, err error) {
 
 	ret = job
 	return
+}
+
+func ExtractJobName(key string) string {
+	return strings.TrimPrefix(key, JOB_SAVE_DIR)
 }

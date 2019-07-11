@@ -11,5 +11,5 @@ type MainController struct {
 
 func (m *MainController) Get() {
 	logs.Debug(" in index ......................")
-	m.TplName = "main/index.html"
+	m.TplName = "index.html"
 }

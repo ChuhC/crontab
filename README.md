@@ -1,4 +1,2 @@
 # crontab
-
-界面如下：
-[image](images/screenshot.png)
+![image](https://github.com/ChuhC/crontab/blob/master/images/screenshot.png)
